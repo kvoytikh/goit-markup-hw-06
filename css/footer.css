@@ -177,8 +177,7 @@
         row-gap: 72px;
         align-items: start;
         justify-content: start;
-        padding-left: 108px;
-        padding-right: 164px;
+        padding: 0 108px;
     }
 
     .footer > .container .footer-logo{
