@@ -1,0 +1,80 @@
+body {
+    color: #2E2F42;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1158px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+    max-width: 1158px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1440px) {
+  .container {
+    padding: 0;
+  }
+}
