@@ -24,6 +24,8 @@
 
 .subtitle {
     margin-bottom: 8px;
+    letter-spacing: 0.02em;
+    line-height: 1.11;
 }
 
 .features-list-item > .text{
