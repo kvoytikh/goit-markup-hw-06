@@ -53,11 +53,8 @@
 .mobile_header > .container{
     display: flex;
     flex-direction: column;
-    gap: 168px;
-
+    height: 168px;
 }
-
-.mobile_nav {}
 
 .mobile_nav-list {
     display: flex;
@@ -71,7 +68,7 @@
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: hsl(237, 18%, 22%);
 }
 
 .mobile_nav-list .link.active {
@@ -86,6 +83,7 @@
 
 .mobile_contacts-list {
     display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
