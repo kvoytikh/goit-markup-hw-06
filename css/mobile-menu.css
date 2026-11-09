@@ -45,6 +45,9 @@
 }
 
 .mobile_header {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     /* display: flex;
     flex-direction: column;
     gap: 168px; */
@@ -53,7 +56,8 @@
 .mobile_header > .container{
     display: flex;
     flex-direction: column;
-    gap: 168px;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .mobile_nav-list {
@@ -68,7 +72,7 @@
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: hsl(237, 18%, 22%);
+    color: #2e2f42;
 }
 
 .mobile_nav-list .link.active {
