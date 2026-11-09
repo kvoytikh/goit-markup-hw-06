@@ -1,76 +1,84 @@
-.features-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+/* MOBILE */
+
+.features section{
+
 }
 
-.features-topic-list {
+.features-list {
     display: flex;
-    gap: 24px;
-}
-
-.features-item {
-    width: 264px;
-}
-
-.features-icon {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.decoration-block {
-    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
-    width: 264px;
-    height: 112px;
-    background-color: rgb(244, 244, 253);
-    border: 1px solid rgb(142, 143, 153);
-    border-radius: 4px;
+    gap: 72px;
 }
 
-.features .features-topic {
-    margin-top: 8px;
+.features-icon-wrapper {
+    display: none;
+}
+
+
+.features-list-item{
+    max-width: 100%;
+    width: 100%;
+}
+
+.subtitle {
+    margin-bottom: 8px;
+}
+
+.features-list-item > .text{
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
 }
 
-.features .features-topic-text {
-    margin-top: 8px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
+/* TABLET */
 
-@media (min-width: 320px) {
-
-    .features-section {
-        padding-top: 96px;
-        padding-bottom: 96px;
+@media(min-width:768px){
+    .features-list{
+        flex-direction: row;
+        row-gap: 72px;
+        column-gap: 24px;
+        flex-wrap: wrap;
     }
 
-    .features-topic-list {
-        flex-direction: column; 
+    .features-list-item{
+
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .subtitle {
+        text-align: left;
+    }
+}
+
+/* DESKTOP */
+
+@media(min-width:1158px){
+    .features-list {
+        display: flex;
         justify-content: center;
-        align-items: center;   
-        gap: 72px;
+        gap: 24px;
     }
 
-    .decoration-block {
-        display: none;
+    .features-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 112px;
+        margin-bottom: 8px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        background-color: #F4F4FD;
     }
 
-    .features .features-topic {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11111;
-        text-align: center;
+    
+    .features-icon{}
+
+    .features-list-item {
+        flex-basis: calc((100% - (24px * 3)) / 4);
     }
 
-    .features .features-topic-text {
-        font-weight: 500;
-    }   
+    .features-list-item > .text {
+        font-weight: 400;
+    }
 }

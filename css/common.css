@@ -1,80 +1,258 @@
-body {
-    color: #2E2F42;
-    font-family: "Roboto", sans-serif;
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family:"Roboto", Arial, sans-serif;
+    color:#434455;
     background-color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+ul{
+    list-style-type: none;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+a{
+    text-decoration: none;
+    font-style: normal;
 }
 
-p {
-  margin: 0;
+button{
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+h3{
+   color:#2E2F42;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.1;
+   text-align: center;
 }
 
-button {
-  border: none;
-  background: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
+h2{
+    color:#2E2F42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
-.container {
-  padding: 0 15px;
-  max-width: 1158px;
-  margin: 0 auto;
+h2,
+h1{
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+/* =============== CONTAINER & OTHER UTILITS ============= */
+
+.container{
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
-img {
-  display: block;
+.section {
+    padding: 96px 0;
 }
 
 .sr-only {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  margin: -1px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
 }
 
-textarea {
-  resize: none;
+/* ================== ICONS FROM SPRITE ================== */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
 }
+
+/* ====== FORMS ========= */
 
 input,
 textarea,
-button {
-    border: none;
-    outline: none;
+fieldset{
+    font-family: inherit;
     padding: 0;
+    margin: 0;
+    border:0;
+    outline:none;
+    border:none;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .container {
-    padding: 0 16px;
-    max-width: 1158px;
-  }
+@media(min-width:768px){
+    .container{
+        max-width: 768px;
+    }
 }
 
-@media(min-width: 768px) and (max-width: 1440px) {
-  .container {
-    padding: 0;
-  }
+
+@media(min-width:1158px){
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        font-family: "Roboto", Arial, sans-serif;
+        color: #434455;
+        background-color: #fff;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    button {
+        font-family: inherit;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        cursor: pointer;
+
+    }
+
+    h3 {
+        color: #2E2F42;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        /* 24/20 */
+    }
+
+    h2 {
+        color: #2E2F42;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        /* 40/36 */
+    }
+
+    h2,
+    h1 {
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+
+    /* =============== CONTAINER & OTHER UTILITS ============= */
+
+    .container {
+        width: 100%;
+        max-width: 1158px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .section {
+        padding: 120px 0;
+    }
+
+    .sr-only {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        margin: -1px;
+    }
+
+    /* ================== ICONS FROM SPRITE ================== */
+
+    .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        /* ??? */
+        stroke: currentColor;
+        fill: currentColor;
+    }
+
+    /* ====== FORMS ========= */
+
+    input,
+    textarea,
+    fieldset {
+        font-family: inherit;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        outline: none;
+        border: none;
+    }
 }

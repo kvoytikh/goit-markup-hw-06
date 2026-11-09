@@ -1,0 +1,128 @@
+.mobile_menu {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+    
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+
+.is-open {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.mobile_close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    flex-shrink: 0;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+
+    margin-right: 24px;
+
+    background-color: #E7E9FC;
+}
+
+.mobile_close-btn_icon {
+    fill: #2E2F42;
+}
+
+.mobile_header {
+    /* display: flex;
+    flex-direction: column;
+    gap: 168px; */
+}
+
+.mobile_header > .container{
+    display: flex;
+    flex-direction: column;
+    gap: 168px;
+
+}
+
+.mobile_nav {}
+
+.mobile_nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile_nav-list .link {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.mobile_nav-list .link.active {
+    color: #404BBF;
+}
+
+.mobile_contacts-group{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.mobile_contacts-list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+}
+
+.mobile_contacts-list .link{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.mobile_contacts-list .link.active{
+    color:#4D5AE5;
+}
+
+.mobile_social-list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.mobile_social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D5AE5;
+    color: #f4f4fd;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.footer-social-icon {}
+
+@media(min-width:768px){
+    .mobile_menu{
+        display: none;
+    }
+}
