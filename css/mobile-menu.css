@@ -53,7 +53,7 @@
 .mobile_header > .container{
     display: flex;
     flex-direction: column;
-    height: 168px;
+    gap: 168px;
 }
 
 .mobile_nav-list {
